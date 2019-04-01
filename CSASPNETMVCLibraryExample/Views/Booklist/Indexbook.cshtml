@@ -1,0 +1,19 @@
+﻿@model CSASPNETMVCLibraryExample.Models.Booklist
+
+<h2>Booklist</h2>
+
+<h3>@Model.Bookname</h3>
+
+<dl class="dl-horizontal">
+    <dt>Description</dt>
+    <dd>@Model.Bookdescription</dd>
+    <dt>Aurhor</dt>
+    <dd>@Model.Bookauthor</dd>
+    <dt>Released</dt>
+    <dd>@Model.Bookreleasedate</dd>
+</dl>
+
+
+@Html.ActionLink("All books", "Fulllist")
+
+@Html.Action("Fulllist")
